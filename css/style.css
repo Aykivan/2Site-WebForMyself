@@ -52,6 +52,15 @@ select {
     font: inherit;
 }
 
+a {
+    color: #ED4C5C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .wrap {
     max-width: 1110px;
     min-width: 320px;
@@ -129,3 +138,33 @@ select {
     border-radius: 6px;
     background: #fff;
 }
+
+.about-wrap {
+    padding: 100px 0;
+}
+
+.about-block{
+    display: flex;
+}
+
+.about-block-text, .about-block-img {
+    width: 42%;
+    margin-right: 8%;
+    align-self: center;
+}
+
+.about-block-text h2{
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.about-block-text p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* .about-block-img {
+    margin-left: 20%;
+} */
