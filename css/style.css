@@ -391,3 +391,142 @@ a:hover {
 .white {
     height: 222px;
 }
+
+@media (max-width: 800px) {
+
+    /* header */
+    .header-top {
+        flex-direction: column;
+    }
+
+    .header-top-logo {
+        order: 1;
+        align-self: flex-start;
+    }
+
+    .header-top-button {
+        order: 2;
+        align-self: flex-end;
+        margin: -30px 0 30px 0;
+    }
+
+    .header-top-menu {
+        order: 3;
+    }
+
+    .menu li {
+        margin-top: 15px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .header-wrap-color {
+        padding-top: 20px;
+    }
+
+    /* about-block */
+
+    .about-block {
+        flex-direction: column-reverse;
+    }
+
+    .about-block-text,
+    .about-block-img {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    .about-block-img img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* block-posibilities */
+
+    .posibilities-block {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    /* tech-block */
+
+    .tech-block {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .tech-block-item {
+        max-width: 50%;
+    }
+
+    /* download-block */
+
+    .download-block {
+        flex-direction: column-reverse;
+    }
+
+    .download-block-left,
+    .download-block-right {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    .download-block-right img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* contact-block */
+
+    .contact-block {
+        flex-direction: column;
+    }
+
+    .contact-block-left,
+    .contact-block-right {
+        width: 80%;
+        margin: 0 0 2rem 0;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content h1 {
+        font-size: 3rem;
+    }
+    
+    .header-content h2 {
+        font-size: 1.125rem;
+    }
+
+    .header-top {
+        margin-bottom: 100px;
+    }
+
+    .about-block-text h2, .download-block-left h2, .contact-block-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .posibilities-wrap h2, .tech-wrap h2 {
+        font-size: 2rem;
+    }
+
+    .tech-block-item{
+        max-width: 200px;
+        align-self: center;
+    }
+
+    .tech-block {
+        flex-direction: column;
+    }
+
+    .contact-block-left,
+    .contact-block-right {
+        width: 100%;
+    }
+}
